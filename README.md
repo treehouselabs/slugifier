@@ -5,7 +5,7 @@ Simple, extensible library that converts a string to a slug.
 
 ## Features
 
-* Easy to use: `(new Slugifier())->slugify('Look Ma, no hands!'); // look-ma-no-hands
+* Easy to use: `(new Slugifier())->slugify('Look Ma, no hands!'); // look-ma-no-hands`
 * Handles special characters, all kinds of quotes, transliteration, HTML entities, etc.
 * Extensible: add your custom translations
 * PSR-4 compatible
