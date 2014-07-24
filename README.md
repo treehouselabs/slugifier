@@ -8,8 +8,8 @@ Simple, extensible library that converts a string to a slug.
 * Easy to use: `(new Slugifier())->slugify('Look Ma, no hands!'); // look-ma-no-hands`
 * Handles special characters, all kinds of quotes, transliteration, HTML entities, etc.
 * Extensible: add your custom translations
-* PSR-4 compatible
-* [Well-tested](/tests/TreeHouse/Slugifier/Tests/SlugifierTest.php)
+* PSR-4 compatible and written using PRS-2 coding guidelines [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/treehouselabs/slugifier/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/treehouselabs/slugifier/?branch=master)
+* [Well-tested](/tests/TreeHouse/Slugifier/Tests/SlugifierTest.php) [![Build Status](https://travis-ci.org/treehouselabs/slugifier.svg)](https://travis-ci.org/treehouselabs/slugifier)
 
 ## Usage
 
