@@ -3,10 +3,15 @@ Slugifier
 
 Simple, extensible library that converts a string to a slug.
 
+## Another one?
+
+Yep, sorry. We think this one is pretty good though. Check out the features to see if it's good for you, too.
+
 ## Features
 
+* Lightweight: no dependencies, other than the `mbstring` and `iconv` extensions, which are almost always present.
 * Easy to use: `(new Slugifier())->slugify('Look Ma, no hands!'); // look-ma-no-hands`
-* Handles special characters, all kinds of quotes, transliteration, HTML entities, etc.
+* Handles special characters, all kinds of quotes, transliteration, HTML entities, and more. All out of the box.
 * Extensible: add your custom translations
 * PSR-4 compatible and written using PRS-2 coding guidelines [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/treehouselabs/slugifier/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/treehouselabs/slugifier/?branch=master)
 * [Well-tested](/tests/TreeHouse/Slugifier/Tests/SlugifierTest.php) [![Build Status](https://travis-ci.org/treehouselabs/slugifier.svg)](https://travis-ci.org/treehouselabs/slugifier)
