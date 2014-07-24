@@ -1,0 +1,26 @@
+{
+  "name": "treehouselabs/slugifier",
+  "type": "library",
+  "description": "Slugifier",
+  "keywords": ["slug","slugifier","slugify","url","urlize"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Peter Kruithof",
+      "email": "peter@treehouse.nl"
+    }
+  ],
+  "require": {
+    "ext-mbstring": "*",
+    "ext-iconv": "*",
+    "php": ">=5.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "TreeHouse\\Slugifier\\": "src/TreeHouse/Slugifier/"
+    }
+  }
+}

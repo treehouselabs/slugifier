@@ -1,0 +1,18 @@
+; top-most EditorConfig file
+root = true
+
+; Unix-style newlines
+[*]
+end_of_line = lf
+indent_style = space
+trim_trailing_whitespace = true
+
+[*.php]
+indent_size = 4
+insert_final_newline = true
+
+[*.xml]
+indent_size = 2
+
+[*.yml]
+indent_size = 2
