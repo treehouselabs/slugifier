@@ -12,6 +12,14 @@ class DutchTranslator implements TranslatorInterface
         // in case of eg: foo+bar
         '&' => ' en ',
         '+' => ' en ',
+
+        // these diacritics can appear in the Dutch language without being written as suffixed with an 'e'
+        'Ä' => 'A',
+        'ä' => 'a',
+        'Ö' => 'O',
+        'ö' => 'o',
+        'Ü' => 'U',
+        'ü' => 'u',
     ];
 
     /**
