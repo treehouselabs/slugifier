@@ -3,6 +3,7 @@
 namespace TreeHouse\Slugifier\Tests;
 
 use TreeHouse\Slugifier\Slugifier;
+use TreeHouse\Slugifier\Translation\CommonTranslator;
 use TreeHouse\Slugifier\Translation\DutchTranslator;
 use TreeHouse\Slugifier\Translation\EnglishTranslator;
 use TreeHouse\Slugifier\Translation\TranslatorInterface;
@@ -84,6 +85,24 @@ class SlugifierTest extends \PHPUnit_Framework_TestCase
             [new EnglishTranslator(), 'Foo & Bar', 'foo-and-bar'],
             [new EnglishTranslator(), 'Foo+Bar', 'foo-and-bar'],
         ];
+    }
+
+    public function testTranslatorPositions()
+    {
+        $translator1 = new DutchTranslator();
+        $translator2 = new CommonTranslator();
+
+        $slugifier = new Slugifier(false);
+        $slugifier->addTranslator($translator2, 100);
+        $slugifier->addTranslator($translator1, 50);
+
+        $this->assertEquals(
+            [
+                50  => $translator1,
+                100 => $translator2,
+            ],
+            $slugifier->getTranslators()
+        );
     }
 
     public function testDelimiter()
