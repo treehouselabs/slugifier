@@ -58,6 +58,16 @@ class Slugifier
         }
 
         $this->translators[$priority] = $translator;
+
+        ksort($this->translators);
+    }
+
+    /**
+     * @return TranslatorInterface[]
+     */
+    public function getTranslators()
+    {
+        return $this->translators;
     }
 
     /**
