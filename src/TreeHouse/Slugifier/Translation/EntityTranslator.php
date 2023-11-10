@@ -14,9 +14,9 @@ class EntityTranslator implements TranslatorInterface
             preg_replace(
                 '/&([a-z]{1,2})(grave|acute|cedil|circ|ring|tilde|uml|lig|slash|caron|nof|orn|th);/i',
                 '$1',
-                htmlentities($str, null, 'UTF-8')
+                htmlentities($str, ENT_QUOTES|ENT_SUBSTITUTE, 'UTF-8')
             ),
-            null,
+            ENT_QUOTES|ENT_SUBSTITUTE,
             'UTF-8'
         );
     }
